@@ -1,42 +1,36 @@
+/* CSS HEX */
+:root {
+    --blue-ncs: #2e86abff;
+    --eggshell: #F8F4E3;
+    --oxford-blue: #101d42ff;
+    --rich-black-fogra-29: #0d1317ff;
+    --dark-moss-green: #3f612dff;
+}
+
 body {
-    padding-left: 11em;
+    padding-left: 10%;
+    padding-right: 10%;
     font-family: Georgia, "Times New Roman",
           Times, serif;
-    color: purple;
-    background-color: #d8da3d }
-  ul.navbar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 2em;
-    left: 1em;
-    width: 9em }
-  h1 {
-    font-family: Helvetica, Geneva, Arial,
-          SunSans-Regular, sans-serif }
-  ul.navbar li {
-    background: white;
-    margin: 0.5em 0;
-    padding: 0.3em;
-    border-right: 1em solid black }
-  ul.navbar a {
-    text-decoration: none }
-  a:link {
-    color: blue }
-  a:visited {
-    color: purple }
-  address {
-    margin-top: 1em;
-    padding-top: 1em;
-    border-top: thin dotted }
+    color: var(--oxford-blue);
+    background-color: var(--eggshell) }
+
+h1 {
+    color: var(--blue-ncs);
+    text-align: center;
+}
+
+.doctitle {
+    text-align: center;
+}
 
 .block {
     display: block;
     width: 50%;
     border: none;
-    background-color: #04AA6D;
-    padding: 10px 0px;
+    background-color: var(--dark-moss-green);
+    color: var(--eggshell);
+    padding: 10px 5px;
     font-size: 16px;
     cursor: pointer;
     text-align: center;
@@ -44,12 +38,32 @@ body {
 
 .flex-parent {
     display: flex;
+    align-items: center;
     }
       
 .jc-center {
     justify-content: center;
     }
-      
-button.margin-right {
-    margin-right: 20px;
-    }
+    
+.harold {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.display {
+    text-align: center;
+    background-color: var(--blue-ncs);
+    border-style: groove;
+    width: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+}
+
+.single {
+    font-size: 16px;
+    font-size: 50vh;
+    /*display: inline-block;*/
+    vertical-align: middle;
+}
+

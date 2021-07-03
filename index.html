@@ -10,15 +10,21 @@
 
 
 
-<body>s
+
+<body>
     <h1>E-Glyph</h1>
     <input type="file" id="input"/>
+        <div class="flex-parent jc-center">
+            <button type="button" class="block" id="left" onclick="previous()">Previous</button>
+            <button type="button" class="block" id="right" onclick="next()">Next</button>
+        </div>
 
-    <div class="flex-parent jc-center">
-        <button type="button" class="block" id="left" onclick="previous()">Previous</button>
-        <button type="button" class="block" id="right" onclick="next()">Next</button>
+        <p>----------------------------------------------------------------</p>
     </div>
 
-    <p>----------------------------------------------------------------</p>
-    <p id="single"></p>
+    <div class="harold">
+        <div class="display">
+            <p id="single" class="single">H</p>
+        </div>
+    </div>
 </body>
