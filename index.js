@@ -19,9 +19,9 @@ window.onload = () =>
     }
     next.onclick = () =>
     {
-        if (currentIndex == text.length)
+        if (currentIndex + 1 == text.length)
         {
-
+            updateDisplay()
         } else 
         {
             currentIndex++
@@ -32,7 +32,7 @@ window.onload = () =>
     {
         if (currentIndex == 0)
         {
-
+            updateDisplay()
         }
         else {
             currentIndex--
