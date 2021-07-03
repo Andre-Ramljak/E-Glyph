@@ -8,6 +8,7 @@ window.onload = () =>
     let text = ""
     const updateDisplay = () =>
     {
+        if (!text) {return}
         display.innerHTML = text[currentIndex]
     }
     input.onchange = () => {
