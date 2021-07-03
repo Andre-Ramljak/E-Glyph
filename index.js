@@ -3,12 +3,12 @@ display = document.getElementById("singleCharacter")
 //previous = document.getElementById("left")
 //next = document.getElementById("right")
 
-const previous = function()
+function next()
 {
     alert("gay!!!!")
 }
 
-const next = function()
+function previous()
 {
     alert("straight!!!!")
 }
