@@ -40,25 +40,28 @@ h1 {
     display: flex;
     align-items: center;
     }
-      
+
 .jc-center {
     justify-content: center;
     }
-    
+
 .harold {
     padding-left: 25%;
     padding-right: 25%;
 }
 
 .display {
-    text-align: center;
-    background-color: var(--blue-ncs);
-    border-style: groove;
-    width: 100%;
-    border-radius: 50%;
-    vertical-align: middle;
-    position: relative;
+	text-align: center;
+	background-color: var(--blue-ncs);
+	border-style: groove;
+	width: 100%;
+	padding-top: 100%;
+	border-radius: 50%;
+	vertical-align: middle;
+	position: relative;
+
 }
+
 
 .single {
     font-size: 16px;
@@ -66,4 +69,3 @@ h1 {
     /*display: inline-block;*/
     vertical-align: middle;
 }
-
