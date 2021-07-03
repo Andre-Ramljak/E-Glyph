@@ -1,20 +1,23 @@
 window.onload = () =>
 {
-    const input = document.getElementById('input')
+    const input = document.getElementById("input")
     const display = document.getElementById("single")
+    const previous = document.getElementById("left")
+    const next = document.getElementById("right")
     let currentIndex = 0
     let text = ""
-    input.onchange = () => {
-        textfile = input.files[0]
-        text = FileReaderSync.readAsText(textfile)
-        console.log(text)
-        updateDisplay()
-    }
     const updateDisplay = () =>
     {
         display.innerHTML = text[currentIndex]
     }
-    function next()
+    input.onchange = () => {
+        textfile = input.files[0]
+        textfile.text()
+            .then(s => {text = s})
+            .then(() => {updateDisplay()})
+            .then(() => {console.log(text)})
+    }
+    next.onclick = () =>
     {
         if (currentIndex == text.length)
         {
@@ -25,8 +28,7 @@ window.onload = () =>
             updateDisplay()
         }
     }
-
-    function previous()
+    previous.onclick = () =>
     {
         if (currentIndex == 0)
         {
@@ -37,7 +39,6 @@ window.onload = () =>
             updateDisplay()
         }
     }
-
 }
 
 //previous = document.getElementById("left")
