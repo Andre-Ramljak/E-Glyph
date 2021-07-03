@@ -30,3 +30,26 @@ body {
     margin-top: 1em;
     padding-top: 1em;
     border-top: thin dotted }
+
+.block {
+    display: block;
+    width: 50%;
+    border: none;
+    background-color: #04AA6D;
+    padding: 10px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    }
+
+.flex-parent {
+    display: flex;
+    }
+      
+.jc-center {
+    justify-content: center;
+    }
+      
+button.margin-right {
+    margin-right: 20px;
+    }
